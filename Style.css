@@ -1,0 +1,635 @@
+*{
+		margin:0;
+		padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+	min-height:100vh;
+	background-color:#E9E7E0;
+	color:#0F0F0F;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+footer{
+	z-index:999;
+	bottom:0;
+	left:0;
+	background-color:#213355;
+	height:22vh;
+	position: relative;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.25);
+	border-color: #0F0F0F;
+	border-style:solid;
+	border-width:4px 0px 0px 0px;
+}
+li a:not(#active):not(#Name):not(.SideNavLink):not(.footerLink):hover{
+	opacity:.65;
+}
+.footerLink:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+/*Embeded Link - Page:ALL*/
+.embedLink{
+	text-decoration:none;
+	color:#0F0F0F;
+	font-weight:bold;
+}
+.embedLink:hover{
+	text-decoration:underline;
+}
+
+
+
+
+/*Hero Banner - Page: ALL*/
+.Hero{
+	position:relative;
+	height:auto;
+	top:0px;
+	left:0px;
+	z-index:0;
+}
+.shadow{
+	position:absolute;
+	box-shadow:inset 0px -10px 10px rgba(0,0,0,.25);
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+.Hero >img{
+	width:100%;
+	display:block;
+	
+}
+
+
+
+
+
+/*Page Title - Page: ALL*/
+.PageTitle{
+	padding:15px 0px 15px 150px;
+	background-color: #213355;
+	border-color: #0F0F0F;
+	border-style: solid;
+	border-width:4px 0px 4px 0px;
+	margin: 8px 0px 8px 0px;
+	/*#e3ddcd;*/
+}
+.PageTitle > p{
+	font-size:36px;
+	font-weight:bold;
+	color: #e3ddcd;
+}
+
+
+
+
+
+/*footer content - Page: ALL*/
+.footerLinks{
+	text-align:center;
+}
+.footerLinks > ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.footerLinks > ul > li{
+	padding:24px 0px 8px 0px;
+}
+.footerLink{	
+	text-decoration:none;
+	color: #e3ddcd;
+	font-weight:bold;
+	font-size:16px;
+	padding:8px 10px 8px 10px;
+	margin-left:4vw;
+	margin-right:4vw;
+	width:105px;
+}
+.otherFooterContents{
+	margin-top:18px;
+	grid-template-columns:auto auto;
+	justify-content:center;
+	width:100%;
+	gap:150px;
+}
+.otherFooterContents > div{
+	align-content:center;
+	justify-items:center;
+}
+.svgDiv{
+	width:auto;
+	height:auto;
+}
+.svgDiv > a > svg > path{
+	fill:#e3ddcd;
+}
+.contactInfo{
+	text-align:center;
+	margin-top:4px;
+}
+.contactInfo > p{
+	font-size:24px;
+	color:#e3ddcd;
+}
+
+
+
+
+
+/*Grid Based Content*/
+.content{
+	padding-left:min(400px, 16%);
+	padding-right:min(400px, 16%);
+}
+.contentGrid{
+	height:auto;
+	top:60px;
+	width:auto;
+	padding-left:min(150px, 11%);
+	padding-right:min(150px, 11%);
+	display:flex;
+	justify-content:center;
+}
+/*Post Based Content*/
+.paragraphContent{
+	height:auto;
+	width:100%;
+	background-color:#e3ddcd;
+	border-style: solid;
+	border-color:#0F0F0F;
+	border-width:4px;
+	border-radius: 10px;
+	margin-bottom:40px;
+	padding-top:10px;
+}
+.pdfContent{
+	height:100vh;
+	width:auto;
+	padding-left:min(150px, 11%);
+	padding-right:min(150px, 11%);
+	display:flex;
+	justify-content:center;
+}
+.footerContent{
+	padding-left:min(300px, 10%);
+	padding-right:min(300px, 10%);
+	justify-items:center;
+}
+.quoteContent{
+	padding: 10px min(150px, 3%) 10px min(150px, 3%);
+	justify-items:center;
+	background-color:#AF9D6E;
+	border-style: solid;
+	border-color:#0F0F0F;
+	border-width:2px;
+	border-radius: 10px;
+	margin: 20px min(300px, 15%) 20px min(300px, 15%);
+}
+
+
+
+
+
+/*Navigation Bar CSS - Page: ALL*/
+#TopMark{
+	background-color: #c94635;
+	color:#0F0F0F;
+	padding:4px 8px 2px 8px;
+	border-radius: 4px;
+	border-style:solid;
+	border-color:#0F0F0F;
+	border-width:3px;
+	/*box-shadow: 14px 10px #1f3d79, 14px 10px 0px 4px #0F0F0F;*/
+}
+/*#BackMark{
+	background-color: #1f3d79;
+	color:#0F0F0F;
+	padding:0px 6px 9px 9px;
+	border-radius: 4px;
+	border-style:solid;
+	border-color:#0F0F0F;
+	border-width:3px;
+
+}*/
+#active{
+	background-color: transparent;
+}
+div{
+	scroll-margin-top:75px;
+}
+.NavBar{
+	background-color:#e3ddcd;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.25);
+	position: sticky;
+	top:0px;
+	z-index:999;
+	height:65px;
+	
+}
+.NavBar ul{
+	width:100%;
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+	padding-top:8px;
+}
+.NavBar li{
+	height: 50px;
+}
+.NavBar a{
+	height: 100%;
+	padding: 0 36px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: #0F0F0F;
+	font-weight: bold;
+	font-size:22px;
+}
+.NavBar a:hover:not(#active):not(#Name){
+	opacity:.65;
+}
+.NavBar li:first-child{
+	margin-right:auto;
+}
+#Name{
+	font-size:50px;
+	padding: 0px 5px;
+	width:350px;
+	font-weight: normal;
+}
+@media(max-width:1100px){
+	a.HideOnMobile{
+		display:none;
+	}
+}
+
+
+
+
+
+/*Minimized Navigation Bar CSS - Page: ALL*/
+.MinNav ul{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width:350px;
+	z-index:999;
+	background-color:rgba(233, 231, 224, .4);
+	box-shadow:-10px 0 10px rgba(0,0,0,0.25);
+	display: none;
+	list-style-type:none;
+	backdrop-filter:blur(5px);
+}
+.MinNav li{
+	width: 100%;
+	margin:auto;
+	
+}
+.MinNav a{
+	display:block;
+	text-decoration:none;
+	padding:12px 40px;
+	height:100%;
+	color: #0F0F0F;
+	font-weight: bold;
+	font-size:24px;
+}
+@media(min-width:1101px){
+	a.HideOnPC{
+		display:none;
+	}
+	.MinNav{
+		display:none;
+	}
+}
+@media(max-width:700px){
+	.MinNav{
+		width:100%;
+	}
+}
+#X{
+	text-align: right;
+	padding:20px 40px 0px 0px;
+}
+
+
+
+
+
+/*quote box - Page:ALL */
+.QuoteText{
+	text-align:center;
+	margin-top:2px;
+	margin-bottom:5px;
+	text-indent:2em;
+	font-weight:500;
+	font-size:18px;
+	font-weight:bold;
+}
+.QuoteSource{
+	text-align:center;
+	margin-top:20px;
+	text-indent:2em;
+	font-weight:500;
+	font-size:18px;
+	font-weight:bold;
+}
+.homeSpacer{
+	padding:10px 50px 0px 50px;
+}
+
+
+
+
+
+/*Project Grid CSS - Page: Projects*/
+#ProjGrid{
+	display: inline-grid;
+	position:center;
+	background-color: transparent;
+	gap: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	padding:35px;
+	justify-items:center;
+}
+#ProjGrid > div {
+	background-color: #e3ddcd;
+	padding:12px;
+	font-size: 16px;
+	text-align:center;
+	border-style: solid;
+	border-color:#3E3E3E;
+	border-radius: 10px;
+	width:min(100%, 700px);
+	/*height: max(636px, auto);*/
+	display:inline-grid;
+	grid-template-columns:auto;
+}
+.ProjImgDiv{
+	justify-content:center;
+}
+.ProjImg{
+	margin-top:5px;
+	margin-bottom:5px;
+	border-radius: 50px;
+}
+.ProjTitle{
+	font-size: 32px;
+	text-align:left;
+	margin-top:5px;
+	margin-bottom:2px;
+	font-weight:bold;
+}
+.ProjDate{
+	text-align:left;
+	font-size: 20px;
+	margin-top:0px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+.ProjSummary{
+	text-align:left;
+	margin-top:2px;
+	margin-bottom:5px;
+	padding:0px 5px 0px 5px;
+	text-align:justify;
+	text-indent:1em;
+}
+.ProjButtonDiv{
+	justify-content:left;
+}
+.ProjButton{
+	float: left;
+	padding-top:15px;
+	padding-bottom:5px;
+	color: black;
+	text-decoration:none;
+	font-weight:bold;
+}
+#ProjTopMark1{
+	background-color: #d9be4d;
+	color:#0F0F0F;
+	padding:4px 8px 4px 8px;
+	border-radius: 4px;
+	border-style:solid;
+	border-color:#0F0F0F;
+	border-width:3px;
+	/*box-shadow: 8px -6px #1f3d79, 8px -6px 0px 3px #0F0F0F;*/
+}
+#ProjTopMark2{
+	background-color: #c94635;
+	color:#0F0F0F;
+	padding:4px 8px 4px 8px;
+	border-radius: 4px;
+	border-style:solid;
+	border-color:#0F0F0F;
+	border-width:3px;
+}
+#ProjBackMark1{
+	background-color: #1f3d79;
+	color:#0F0F0F;
+	padding:13px 8px 0px 6px;
+	border-radius: 4px;
+	border-style:solid;
+	border-color:#0F0F0F;
+	border-width:3px;
+}
+#ProjBackMark2{
+	background-color: #c94635;
+	color:#0F0F0F;
+	padding:13px 8px 0px 6px;
+	border-radius: 4px;
+	border-style:solid;
+	border-color:#0F0F0F;
+	border-width:3px;
+}
+
+
+
+
+
+/*Return Link formatting - Page: Project Subpages*/
+.returnDiv{
+	justify-content:left;
+	width:100%;
+	padding:4px 0px 14px 0px;
+}
+.return{
+	text-decoration:none;
+	color: #0F0F0F;
+	font-weight:bold;
+	padding-left:min(420px, 17%);
+	font-size:16px;
+}
+.PhaseTitle{
+	font-size: 32px;
+	text-align:left;
+	font-weight:bold;
+	padding:5px 0px 2px 12px; 
+}
+.PhaseDate{
+	font-size: 20px;
+	text-align:left;
+	font-weight:bold;
+	padding:5px 0px 2px 12px; 
+}
+.PhaseText{
+	text-align:justify;
+	margin-top:2px;
+	margin-bottom:5px;
+	padding:0px 36px 7px 36px;
+	text-indent:2em;
+	font-weight:500;
+	font-size:18px;
+}
+.PhaseFlexGallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	list-style: none;
+	vertical-align: middle;
+	margin:0px;
+	background-color:#e3ddcd;
+	padding: 12px;
+	padding-top:18px;
+	border-radius: 50px;
+}
+.PhaseFlexGallery > li {
+	height: 400px;
+	flex: 1 1 auto;
+}
+.PhaseFlexGallery li img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	border-radius: 40px;
+}
+
+
+
+
+
+/*Gallery Side Navigation Bar CSS - Page: Photobook*/
+#SideNav{
+	list-style-type: none;
+	padding: 0;
+	background-color: #e3ddcd;
+	margin: 0;	
+	position: fixed;
+	left: 0px;
+	overflow:auto;
+	width:auto;
+	height: 100%;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.25);
+	z-index:1;
+}
+.SideNavLink{
+	display: block;
+	color: #0F0F0F;
+	text-align: left;
+	align-items: left;
+	padding: 8px 8px;
+	text-decoration: None;
+	margin:8px 10px 0px 10px;
+	font-weight: bold;
+	width:94px;
+}
+@media(min-width:1101px){
+	.SideNavLink{
+		display:block;
+	}
+	#ImgGrid{
+		margin:0px 100px 25px 100px;
+	}
+}
+@media(max-width:1100px){
+	.SideNavLink{
+		display:none;
+	}
+	#ImgGrid{
+		margin:0px 25px 25px 25px;
+	}
+}
+
+
+
+
+
+/*Gallery Grid CSS - Page: Photobook*/
+#ImgGrid{
+	display: grid;
+}
+#ImgGrid > div {
+	background-color: #e3ddcd;
+	font-size: 16px;
+	text-align:center;
+	position:center;
+	border-style: solid;
+	border-color:#3E3E3E;
+	border-width:4px;
+	border-radius: 10px;
+	margin:35px 0px 0px 0px;
+}
+.GalleryTitle{
+	font-size: 32px;
+	text-align:left;
+	padding-left:12px;
+	margin-top:8px;
+	margin-bottom:4px;
+	scroll-margin-top:111px;
+	font-weight:bold;
+}
+.GalleryDate{
+	text-align:left;
+	font-size: 20px;
+	padding-left:12px;
+	margin-top:4px;
+	margin-bottom:6px;
+}
+.FlexGallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	list-style: none;
+	vertical-align: middle;
+	margin:0px;
+	background-color:#e3ddcd;
+	padding: 12px;
+	padding-top:4px;
+	border-radius: 50px;
+}
+.FlexGallery > li {
+	height: 500px;
+	flex: 1 1 auto;
+}
+.FlexGallery li img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	border-radius: 40px;
+}
+
+
+
+
+
+.pdf{
+	height:75 vw;
+	width:100%;
+}

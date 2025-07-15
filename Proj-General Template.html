@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Style.css">
+	<script src=Scripts.js></script>
+</head>
+
+<Body>
+
+	<!--NavBar-->
+	<nav class="NavBar">
+		<ul>
+			<li><a id="Name" href="Home.html"> Marcus Reuss </a></li>
+			<li><a class="HideOnMobile" href="Home.html"> About Me </a></li> 
+			<li ><a class="HideOnMobile"  id="active" href="ProjectsHome.html"> <mark id="BackMark"><mark id="TopMark">Projects</mark></mark> </a></li>
+			<li><a class="HideOnMobile" href="Resume SS2025.pdf"> Resume</a></li>
+			<li><a class="HideOnMobile" href="Photobook.html"> Photobook </a></li>
+			<li onclick=ShowMinNav()><a class="HideOnPC" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></a></li>
+		</ul>
+	</nav>
+	
+	<nav class="MinNav">	
+		<ul >
+			<li onclick=HideMinNav()><a id="X" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg></a></li>
+			<li><a href="Home.html"> About Me </a></li> 
+			<li ><a id="active" href="ProjectsHome.html"> <mark id="BackMark"><mark id="TopMark">Projects</mark></mark></a></li>
+			<li><a href="Resume SS2025.pdf"> Resume</a></li>
+			<li><a  href="Photobook.html"> Photobook </a></li>
+		</ul>
+	</nav>
+
+
+	<!--Hero Image-->
+	<div class="Hero">
+		<img src = "Images\Jp.jpg" alt="Showing visitors tooling">
+		<div class="shadow"></div>
+	</div>
+
+
+	<!--Page Title-->
+	<div class="PageTitle">
+		<p>Project Title</P>
+	</div>
+
+
+	<!--Return Link-->
+	<div class="returnDiv">
+		<a class="return" href="ProjectsHome.html">Back to Projects</a>
+	</div>
+</body>
+
+<footer>
+	<div class="footerContent">
+		<div class="footerLinks">
+			<ul>
+				<li><a class="footerLink" href="Home.html"> Home</a></li> 
+				<li ><a class="footerLink" href="ProjectsHome.html"> Projects</a></li>
+				<li><a class="footerLink" href="Resume SS2025.pdf"> Resume</a></li>
+				<li><a class="footerLink" href="Photobook.html"> Photobook </a></li>
+			</ul>
+		</div>
+		<div class="contactInfo">
+			<p><b>Contact me at:</b> </p>
+			<p>marcusr5190@gmail.com</p>
+		</div>
+		<div class="otherFooterContents">
+			<div>
+				<div class="svgDiv">
+					<a href="https://www.linkedin.com/in/m-reuss/"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</footer>
+</html>

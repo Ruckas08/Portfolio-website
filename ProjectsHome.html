@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Style.css">
+	<script src=Scripts.js></script>
+</head>
+<Body>
+
+<!--NavBar-->
+<nav class="NavBar">
+	<ul>
+		<li><a id="Name" href="Home.html"> Marcus Reuss </a></li>
+		<li><a class="HideOnMobile" href="Home.html"> About Me </a></li> 
+		<li ><a class="HideOnMobile"  id="active" href="ProjectsHome.html"> <mark id="BackMark"><mark id="TopMark">Projects</mark></mark> </a></li>
+		<li><a class="HideOnMobile" href="Resume SS2025.pdf"> Resume</a></li>
+		<li><a class="HideOnMobile" href="Photobook.html"> Photobook </a></li>
+		<li onclick=ShowMinNav()><a class="HideOnPC" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></a></li>
+	</ul>
+</nav>
+<nav class="MinNav">	
+	<ul >
+		<li onclick=HideMinNav()><a id="X" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg></a></li>
+		<li><a href="Home.html"> About Me </a></li> 
+		<li ><a id="active" href="ProjectsHome.html"> <mark id="BackMark"><mark id="TopMark">Projects</mark></mark></a></li>
+		<li><a href="Resume SS2025.pdf"> Resume</a></li>
+		<li><a  href="Photobook.html"> Photobook </a></li>
+	</ul>
+</nav>
+
+<!--Hero Image-->
+	<div class="Hero">
+		<!--<p>Projects</p>-->
+		<img src = "Images\Jp.jpg" alt="Showing visitors tooling">
+		<div class="shadow"></div>
+	</div>
+
+<!--Content-->
+<div class="PageTitle">
+	<p>Projects</P>
+</div>
+<div class="contentGrid">
+	<!--Grid of Projects-->
+	<div id="ProjGrid">
+		<!--Project 1-->
+		<div>
+			<div class="ProjImgDiv" >
+				<img class="ProjImg" src = "Images\Sputter Proj\V1.png" alt="Images\Sputter Proj\Sputter V1.png" width="400" height="430">
+			</div>
+			<p class="ProjTitle"> Sputter Deposition Chamber </p>
+			<p class="ProjDate"> September 2024 - Present </p>
+			<p class="ProjSummary"> Lead a team that designed, assembled, and tested a DC sputter depostion chamber used for thin film deposition in association with HackerFab UWaterloo. Sputter has been handed over to other team members while I advise on the functionality of physical vapor deposition and general mechanical design practices.</p>
+			<div class="ProjButtonDiv">
+			<a class="ProjButton" href="Proj-SDC.html"><mark id="ProjBackMark1"><mark id="ProjTopMark1">Read More</mark></mark></a></li>
+			</div>
+		</div>
+		
+		<!--Project 2-->
+		<div>
+			<div class="ProjImgDiv" >
+				<img class="ProjImg" src = "Images\Litho Proj\Litho Cover Image.jpg" alt="Images\Litho Proj\Litho Cover Image.jpg" width="400" height="430">
+			</div>
+				<p class="ProjTitle"> DLP Lithography Station Modification </p>
+				<p class="ProjDate"> April 2025 - Present </p>
+				<p class="ProjSummary"> Co-Lead a team at HackerFab UWaterloo responsible for the creation and usage of a DLP lithography station for  maskless lithography. This project is a modification of the DLP lithography station created by the CMU branch of HackerFab better suited to fit the needs of the HackerFab at UWaterloo. </p>
+				<div class="ProjButtonDiv">
+					<a class="ProjButton" href="Proj-DLP.html"><mark id="ProjBackMark2"><mark id="ProjTopMark1">Read More</mark></mark></a></li>
+				</div>
+			</div>
+			
+		<!--Project 3-->
+		<div>
+			<div class="ProjImgDiv" >
+				<img class="ProjImg" src = "Images\Sputter Proj\V1.png" alt="Images\Sputter Proj\Sputter V1.png">
+			</div>
+			<p class="ProjTitle"> Handheld Mechanical Calculator </p>
+			<p class="ProjDate"> May 2025 - Present </p>
+			<p class="ProjSummary"> Inspired by the Curta Calculator, one of the only mass produced handheld mechanical calculator, developed by Curt Herzstark in the 1930's my goal is to design and produce a variation of this calculator with noticable upgrades. </p>
+			<div class="ProjButtonDiv">
+				<a class="ProjButton" href="Proj-Curta2.html"><mark id="ProjBackMark1"><mark id="ProjTopMark2">Read More</mark></mark></a></li>
+			</div>
+		</div>
+		
+		<!--Project 4-->
+		<div>
+			<div class="ProjImgDiv" >
+				<img class="ProjImg" src = "Images\Site Origin.png" alt="Images\Site Origin.png">
+			</div>
+			<p class="ProjTitle"> Portfolio Website </p>
+			<p class="ProjDate"> June 2025</p>
+			<p class="ProjSummary"> I taught myself HTML, CSS, and javascript in a few weeks instead of paying for Wix, SquareSpace or Webflow. I firmly believe that that teaching oneself how to do something from scratch is more impactful than using a tool to get the same outcome. Once one understands how to do something from scratch then they can use the tools.</p>
+			<div class="ProjButtonDiv">
+				<p class="ProjButton" href="#"><mark id="ProjBackMark1"><mark id="ProjTopMark2">No more to Read</mark></mark></p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<footer>
+	<div class="footerContent">
+		<div class="footerLinks">
+			<ul>
+				<li><a class="footerLink" href="Home.html"> Home</a></li> 
+				<li ><a class="footerLink" href="ProjectsHome.html"> Projects</a></li>
+				<li><a class="footerLink" href="Resume SS2025.pdf"> Resume</a></li>
+				<li><a class="footerLink" href="Photobook.html"> Photobook </a></li>
+			</ul>
+		</div>
+		<div class="contactInfo">
+			<p><b>Contact me at:</b> </p>
+			<p>marcusr5190@gmail.com</p>
+		</div>
+		<div class="otherFooterContents">
+			<div>
+				<div class="svgDiv">
+					<a href="https://www.linkedin.com/in/m-reuss/"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</footer>
+</html>
