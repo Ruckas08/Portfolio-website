@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | MReuss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pinned Header -->
+<header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Marcus Reuss</a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+		<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"></path></svg>
+	  
+	  </button>
+      <nav>
+        <ul id="nav-list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="resume.html"  class="active">Resume</a></li>
+			<li><a href="photobook.html">Photobook</a></li>
+
+        </ul>
+      </nav>
+    </div>
+</header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="pdf-header-actions">
+      <div>
+        <h1 style="margin-bottom:0px;">Resume</h1>
+      </div>
+      <a href="Resume 2026.pdf" download class="button" style="margin-top:0px;">PDF Download</a>
+    </div>
+
+    <!-- Embedded PDF Viewer Component -->
+    <div class="pdf-container">
+      <object data="Resume 2026.pdf" type="application/pdf" class="pdf-frame">
+        <iframe src="Resume 2026.pdf" class="pdf-frame">
+          <div class="pdf-fallback">
+            <h3>PDF Viewer Not Supported</h3>
+            <p>Your browser does not support embedded PDF viewing.</p>
+            <a href="Resume 2026.pdf" download class="button">Download Resume PDF</a>
+          </div>
+        </iframe>
+      </object>
+    </div>
+</main>
+
+  <!-- Contact Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Contact me at:</strong></p>
+        <p>marcusr5190@gmail.com</p>
+      </div>
+      <div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="resume.html">Resume</a>
+			<a href="photobook.html">Photobook</a>
+      </div>
+	  <div class="footer-links">
+        <a class="footer-icons" href="https://www.linkedin.com/in/m-reuss/"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project Details | MReuss</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Pinned Header -->
+<header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Marcus Reuss</a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+		<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"></path></svg>
+	  
+	  </button>
+      <nav>
+        <ul id="nav-list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html" class="active">Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="photobook.html">Photobook</a></li>
+
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<!-- Main Content Layout -->
+<main>
+    
+    <!-- Section 1: Overview -->
+    <div class="project-header-section">
+		<h1 style = "margin-bottom:0px;">DLP Lithography Stage Upgrades</h1>
+		
+		<p><strong>Tags:</strong> 3D CAD / Reverse Engineering / FEA / HackerFab</p>
+		<a href="projects.html" style = "font-weight: 600; text-decoration: none; color:#121212; "> ← See all Projects</a>
+		<h2 style="margin-top:0.5rem;">Introduction</h2>
+		<div class="card" style = "padding: 0.5rem 1rem;">
+        
+			<p style = "margin-bottom:0px;">Like the Sputter deposition chamber, the DLP lithography station is used by <a class="ext-link" href="https://www.waterloofab.com/"> UW HackerFab</a> for their open-source chip fab. The initial configuration of the lithographer was horizontal and had troubles securing the silicon substrate to a vertical surface, parallel to the lens of the lithographer.</p>
+		</div>
+    </div>
+
+    <!-- Mobile-Only Top Sidebar Cards (Quick Specs & Project Status placed above main content on mobile) -->
+	<div class="mobile-top-sidebar-cards">
+	  <div class="info-grid">
+	  <div class="info-group">
+		<h2 style= "margin-bottom:0rem; ">Collaberators</h2>
+		<div class="card" style="padding:0.5rem 1rem;">
+			
+			<p style = "margin-bottom: 0.5rem;"><strong><a class="ext-link" href="https://jerichom.com/"></strong> Jerico Mordasiewicz</a> - Process Lead</p>
+			
+			<p style = "margin-bottom: 0.5rem;"><strong><a class="ext-link" href="https://www.linkedin.com/in/gursaaz-gund-728359246/"></strong> Gursaaz Gund</a> - Mechanical Designer</p>
+        </div>
+	  </div>
+	
+	  <div class="info-group">	
+		<h2>Learned Skills</h2>
+		<div class="card" style = "padding:0.5rem 1rem;">
+			<p style="margin-bottom: 0.5rem;">• Designing for Stiffness</p>
+			<p style="margin-bottom: 0.5rem;">• Designing for Parallelism</p>
+		</div>
+	  </div>
+    </div>
+	</div>
+
+    <!-- Section 2: Body Grid (Desktop: Left specs + Right Sidebar) -->
+    <div class="project-body-layout">
+      
+      <!-- Specifications & Parameters Section (Main Content) -->
+    <div class="content-col">
+		<h2>Version 1: Aluminium Extrusion</h2>
+        
+		<div class="grid-container">
+          
+			<div class="card">
+			
+			<p> The initial stage was made to vertically align the DLP Photo Lithographer over an assembled stepper stage. This was done with aluminium extrusion for ease of assembly and high repeatability. Two 3D printed mounting bracket was designed for the stage and projector by Gursaaz Gund in OnShape.</p>
+			
+			<p> Since the lithographer is being suspended it was important to cut the weight down to improve stability. I removed the outer aluminium casing and cooling fans. The cooling fans were replaced with a passively cooled heat sink.</p>
+			
+			</div>
+		  
+			<div class="card" style = "padding:0.5rem;">
+			<p>Due to the brackets being 3D printed there is the issue of creeping while supporting the projector and the stage. It is most noticable in the stage as it has a large cantilevered moment, causing it to sag. This concern was verified by Jerico during patterning when focusing a corner the opposite corner would shift out of focus</p>
+			
+			<div class="portrait-img-grid">
+				<div class="portrait-img-container">
+					<img src="Images/Litho Stage/Bracket CAD.png" alt="optical mounting bracket">
+				</div>
+				<div class="portrait-img-container">
+					<img src="Images/Litho Stage/Resolved Litho Optics.jpg" alt="Good Bracket on Litho">
+				</div>
+			</div>
+			
+			<p style = "margin-bottom:0rem;">Another issue discovered by Jerico was that the 3D printed bracket supporting the optics of the projector was sagging. This was solved by reprinting the bracket with a higher infill.</p>
+			</div>
+		  
+        </div>
+
+        <h2 style = "padding-top: 1.5rem;">Version 2: Salvaged Components</h2>
+        
+		<div class="grid-container">
+          
+			<div class="card" style = "padding:0.5rem;">
+			
+			<div class="project-img-container">
+				<img src="Images/Litho Stage/Salveged Components.jpg" alt="Loot">
+			</div>
+			
+			<p>To improve the parallelism of the whole assembly it is optimal to mount the stepper stage and the projector to the same plate. As long as we can ensure it's flatness we can know that the lens of the projector and the top face of the stepper stage are parallel. To reduce the sagging the bracket should be made from aluminium instead of being 3D printed.</p>
+			
+			<div class="project-img-container">
+				<img src="Images/Litho Stage/Stiffness Study.png" alt="Stiffness test results">
+			</div>
+			
+			<p>There is concern about vibrations and stiffness of the whole assembly, this can be be relieved in an overkill fashion by salvaging prototype components from an Altmill 4x8 CNC. The average stiffness was experementally determined to be 976 N/mm when applying a force parallel to the length of the extrusion. The heft of the assembly should also act as a dampener for any external vibrations.</p>
+			
+			<p style = "margin-bottom:0rem;">This is a work in progress and will be updated accordingly.</p>
+			</div>
+		  
+        </div>
+		
+    </div>
+
+		<!-- Right Column Sidebar (Desktop) -->
+		<aside class="sidebar-col desktop-sidebar">
+
+			<!-- Generic Collaberator Card -->
+			<h2 class= "fortnite" style= "margin-bottom:0rem;">Collaberators</h2>
+			<div class="card desktop-sidebar-card">
+				<p style = "margin-bottom: 0.5rem;"><strong><a class="ext-link" href="https://jerichom.com/"></strong> Jerico Mordasiewicz</a> - Process Lead</p>
+				
+				<p style = "margin-bottom: 0.5rem;"><strong><a class="ext-link" href="https://www.linkedin.com/in/gursaaz-gund-728359246/"></strong> Gursaaz Gund</a> - Mechanical Designer</p>
+			</div>
+			
+			<h2 class= "fortnite" style= "margin-bottom:0rem; ">Learned Skills</h2>
+			<div class="card desktop-sidebar-card">
+				<p style="margin-bottom: 0.5rem;">• Designing for Stiffness</p>
+				<p style="margin-bottom: 0.5rem;">• Designing for Parallelism</p>
+			</div>
+
+
+			<!-- Card 2: Audio Integration -->
+			<h2 style="margin-bottom:0rem;">Project Soundscape</h2>
+			<div class="music-player-card">
+				<audio id="audio-player" style="display: none;"></audio>
+
+				<div class="song-list">
+					<div class="song-item" data-src="SoundScape/It's Magic.mp3">
+						<div class="song-meta">
+							<h4>It's Magic</h4>
+							<p>T-Square • 5:16</p>
+						</div>
+						<!-- Changed from <span> to <button> for explicit click interaction -->
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+
+					<div class="song-item" data-src="SoundScape/End Of The World.mp3">
+						<div class="song-meta">
+							<h4>End of the World</h4>
+							<p>Aphrodite's Child • 3:19</p>
+						</div>
+						<!-- Changed from <span> to <button> for explicit click interaction -->
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+
+					<div class="song-item" data-src="SoundScape/A Remark You Made.mp3">
+						<div class="song-meta">
+							<h4>A Remark You Made</h4>
+							<p>Weather Report • 6:50</p>
+						</div>
+						<!-- Changed from <span> to <button> for explicit click interaction -->
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+
+				<!-- Master Audio Controls Bar -->
+				<div class="master-controls-bar">
+					<div class="progress-bar-container" id="progress-container" style=	"width: 100%; margin-bottom: 0rem;">
+					<input type="range" id="song-progress" min="0" max="100" value="0" step="0.1" aria-label="Song Progress">
+						<div class="progress-bar-fill" id="progress-fill"></div>
+					</div>
+
+					<div class="time-display" style="margin-bottom: 0.6rem;">
+						<span id="current-time">0:00</span>
+						<span id="total-time">0:00</span>
+					</div>
+
+					<div class="controls-row" style="display: flex; justify-content: space-between; gap: 0.6rem;">
+						<button class="ctrl-btn" id="master-play-btn" style=<button id="master-play-btn" class="ctrl-btn" aria-label="Play/Pause">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+						<div class="volume-control-wrapper" style="display: flex; align-items: center; gap: 0.5rem;">
+							<span style="font-size: 0.75rem; font-family: monospace;">VOL</span>
+							<input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1" aria-label="Volume Slider">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+    </aside>
+
+    </div>
+</main>
+
+  <!-- Contact Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Contact me at:</strong></p>
+        <p>marcusr5190@gmail.com</p>
+      </div>
+      <div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="resume.html">Resume</a>
+			<a href="photobook.html">Photobook</a>
+      </div>
+	  <div class="footer-links">
+        <a class="footer-icons" href="https://www.linkedin.com/in/m-reuss/"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

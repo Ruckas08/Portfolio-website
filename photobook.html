@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photobook | MReuss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="photobook-page">
+
+<header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Marcus Reuss</a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+		<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"></path></svg>
+	  
+	  </button>
+      <nav>
+        <ul id="nav-list">
+			<li><a href="index.html" >Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="photobook.html" class="active">Photobook</a></li>
+
+        </ul>
+      </nav>
+    </div>
+</header>
+
+  <!-- Photobook Nav Bar positioned to the left of main, collapsible dropdown on intermediate screens -->
+	<aside class="photobook-sidebar">
+		<div class="card photobook-nav-card">
+				<button class="photobook-dropdown-toggle" onclick="togglePhotobookMenu()">
+				<span>Fast Travel to Section</span>
+				<span class="dropdown-arrow">▼</span>
+			</button>
+			<h3 class = "tag-title">Fast Travel</h3>
+			<ul class="photobook-jump-list" id="photobook-jump-list" style="margin-top:0px;">
+				<li><a href="#Judging MLH x Spurhacks" onclick="closePhotobookMenu()">Judging MLH x Spurhacks</a></li>
+				<li><a href="#HackerFab @ Socratica Symposium" onclick="closePhotobookMenu()">HackerFab @ Socratica Symposium</a></li>
+				<li><a href="#HackerFab UW x CMU" onclick="closePhotobookMenu()">HackerFab UW x CMU</a></li>
+				<li><a href="#Ontario Engineering Competition" onclick="closePhotobookMenu()">Ontario Engineering Competition</a></li>
+			</ul>
+		</div>
+	</aside>
+
+<main>
+	<h1>Photobook</h1>
+
+    <!-- Main Content Sections aligned to the left of main -->
+    <div class="photobook-content">
+      
+      <!-- Section 1 -->
+		<section id="Judging MLH x Spurhacks" class="photo-section">
+			<div class="photobook-info">
+				<h2>Judging MLH x Spurhacks</h2>
+				<p> June 2025</p>
+			</div>	
+				
+			<div class="grid-container">
+				<div class="card" style="text-align: center; padding: 2rem;">
+					<div class="photobook-row">
+					<figure class="photobook-item">
+						<img src="Images/Photobook/Judging Spurhacks 2025 2.jpg" alt="@ Spurhacks">
+					</figure>
+					<figure class="photobook-item">
+						<img src="Images/Photobook/Judging Spurhacks 2025 1.jpg" alt="Spurhacks with Arjun">
+					</figure>
+				</div>
+				</div>
+			</div>
+		</section>
+
+      <!-- Section 2 -->
+		<section id="HackerFab @ Socratica Symposium" class="photo-section">
+			<div class="photobook-info">
+				<h2>HackerFab @ Socratica Symposium</h2>
+				<p> March 2025</p>
+			</div>
+			
+			<div class="grid-container">
+				<div class="card" style="text-align: center; padding: 2rem;">
+					<div class="photobook-row">
+					<figure class="photobook-item">
+						<img src="Images/Photobook/HF SS Booth Demo.jpg" alt="Explaining Tube Furnace">
+					</figure>
+					<figure class="photobook-item">
+						<img src="Images/Photobook/HF SS Prep 2.jpg" alt="The Team @ 4:30am">
+					</figure>
+					<figure class="photobook-item">
+						<img src="Images/Photobook/HF SS Prep.JPG" alt="HF Merch Drop">
+					</figure>
+					<figure class="photobook-item">
+						<img src="Images/Photobook/CEO of Sex.png" alt="Arjun being Steve Jobs">
+					</figure>
+				</div>
+				</div>
+			</div>
+		</section>
+
+      <!-- Section 3 -->
+		<section id="HackerFab UW x CMU" class="photo-section">
+			<div class="photobook-info">
+				<h2>HackerFab UW x CMU</h2>
+				<p> June 2025</p>
+			</div>
+			
+			<div class="grid-container">
+				<div class="card" style="text-align: center; padding: 2rem;">
+					<div class="photobook-row">
+					<figure class="photobook-item">
+						<img src="Images/Photobook/HF CMU Group Photo.jpg" alt="HF UW x CMU team photo">
+					</figure>
+					<figure class="photobook-item">
+						<img src="Images/Photobook/HF CMU Verif.jpg" alt="Verification of chips in lab">
+					</figure>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Section 3 -->
+		<section id="Ontario Engineering Competition" class="photo-section">
+			<div class="photobook-info">
+				<h2>Ontario Engineering Competition</h2>
+				<p> January 2024</p>
+			</div>
+				
+			<div class="grid-container">
+				<div class="card" style="text-align: center; padding: 2rem;">
+					<div class="photobook-row">
+					<figure class="photobook-item">
+						<img src="Images/Photobook/OEC 2024 Debate.jpg" alt="Debaters">
+					</figure>
+					<figure class="photobook-item">
+						<img src="Images/Photobook/OEC 2024 Guelph.jpg" alt="Full Guelph Team">
+					</figure>
+				</div>
+			</div>
+		</section>
+
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Contact me at:</strong></p>
+        <p>marcusr5190@gmail.com</p>
+      </div>
+      <div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="resume.html">Resume</a>
+			<a href="photobook.html">Photobook</a>
+      </div>
+	  <div class="footer-links">
+        <a class="footer-icons" href="https://www.linkedin.com/in/m-reuss/"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

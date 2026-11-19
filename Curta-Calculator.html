@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project Details | MReuss</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Pinned Header -->
+<header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Marcus Reuss</a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+		<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"></path></svg>
+	  
+	  </button>
+      <nav>
+        <ul id="nav-list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html" class="active">Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="photobook.html">Photobook</a></li>
+
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<!-- Main Content Layout -->
+<main>
+    
+    <!-- Section 1: Overview -->
+    <div class="project-header-section">
+		<h1 style = "margin-bottom:0px;">3D CAD of Curta Calculator</h1>
+		
+		<p><strong>Tags:</strong> Reverse Engineering / 3D CAD</p>
+		<a href="projects.html" style = "font-weight: 600; text-decoration: none; color:#121212; "> ← See all Projects</a>
+		<h2 style="margin-top:0.5rem;">Introduction</h2>
+		<div class="card" style = "padding: 0.5rem 1rem;">
+        
+			<p style = "margin-bottom:0px;">The Curta Calculator is one of the coolest pieces of computation history as it is one of the only mass produced handheld mechanical calculators. developed by Curt Herzstark in the 1930's my goal was to use the original drawings to create a model of the with all the proper mates and interactions to emulate the original.</p>
+		</div>
+		
+		<h2 style="margin-top:1.5rem;">History</h2>
+		<div class="card" style = "padding: 0.5rem 1rem;">
+        
+			<p>In the 1930’s a man named Curt Herzstark was developing plans for a hand-held mechanical calculator. In 1938 his progress was stopped for a time when he was forced to create machinery for the German army and was sent to the Buchenwald concentration camp in 1943 where he was allowed to continue to work on his design. After Buchenwald was liberated in April 1945 the first prototype was developed. Since the prototypes 80,000 Type I and 60,000 Type II Curta calculators were manufactured and were phased out in the 1970’s due to electronic calculators.</p>
+			
+			<p style = "margin-bottom:0px;">The Curta was unique for the time for using a single stepped cylinder to drive the whole mechanism, rather than the common solution of having a stepped cylinder for each output register. Because of the Curta having only one stepped cylinder driving the calculator it enables the calculator to do subtraction via the 9’s complement (subtraction through addition). The Type I and Type II Curta’s differ in the number of entry and result registers. </p>
+		</div>
+    </div>
+
+    <!-- Mobile-Only Top Sidebar Cards (Quick Specs & Project Status placed above main content on mobile) -->
+	<div class="mobile-top-sidebar-cards">
+	  <div class="info-group">	
+		<h2>Learned Skills</h2>
+		<div class="card" style = "padding:0.5rem 1rem;">
+			<p style="margin-bottom: 0.5rem;">• 3D CAD with Precision Tolerances</p>
+			<p style="margin-bottom: 0.5rem;">• Advanced Mating in Assemblies</p>
+		</div>
+	  </div>
+    </div>
+	
+
+    <!-- Section 2: Body Grid (Desktop: Left specs + Right Sidebar) -->
+    <div class="project-body-layout">
+      
+      <!-- Specifications & Parameters Section (Main Content) -->
+    <div class="content-col">
+		<h2>CAD & Appreciation</h2>
+        
+		<div class="grid-container">
+          
+			
+			
+			<div class="card">
+			<p> This project was not one where I am able to showcase the scientific method so instead I am going to showcase cool parts and mechanisms. All the information I found regarding the Curta was found at <a class="ext-link" href="https://www.vcalc.net/cu.htm">vcalc.net</a> and the <a class="ext-link" href="https://curtawiki.wikidot.com/parts">CurtaWiki</a>. </p>
+			</div>
+		  
+			<div class="card">
+			<div class="project-img-container">
+				<img src="Images/Calculator/Upper Main Casting CAD.png" alt="CAD of Upper Main Casting">
+			</div>
+			
+			<div class="project-img-container">
+				<img src="Images/Calculator/Upper Main Casting Drawing.png" alt="Drawing of Upper Main Casting">
+			</div>
+			
+			<p style = "margin-bottom:0rem;">The upper main casting (<a class="ext-link" href = "https://curtawiki.wikidot.com/10011">10011</a>) was by far the most difficult part to create. It could be due to the amout of operations or keeping track of the precise angles of each hole and milled pocket. This piece acts as the guide and resting point of many sub mechanisms in the overall design including the main shaft, carry mechanism, and counter mechanism.</p>
+			</div> 
+
+
+
+			<div class="card">
+			
+			<div class="portrait-img-grid">
+				<div class="portrait-img-container">
+					<img src="Images/Calculator/Stepped Drum.png" alt="Stepped Drum CAD">
+				</div>
+				<div class="portrait-img-container">
+					<img src="Images/Calculator/Stepped Drum in Assy.png" alt="Stepped Drum in full assembly">
+				</div>
+			</div>
+			
+			<p> My favourite mechanism in this device is the stepped drum assembly and it's interaction with the counter mechanism. 
+			
+			<div class="project-img-container">
+				<img src="Images/Calculator/9's complement.png" alt="Description of project screenshot or photo">
+			</div>
+			
+			<p  style = "margin-bottom:0rem;" >The stepped drum assembly can pull out to allow the calculator to enter "subtract mode". Subtraction is calculatde by using the 9's complement, similar to how a computer uses integer overflow to do subtraction through the 2's complement, but in base 10.</p>
+			</div> 
+        </div>
+
+        <h2 style = "padding-top: 1.5rem;">Aspirations</h2>
+        
+		<div class="grid-container">
+          
+			<div class="card">
+			
+			
+			<p>These devices hover around $2500 CAD so owning one for myself seems like a long shot, but I can yearn. I would love to make one but  it is no easy feat as something like this would require the precision of making mechanisims akin to watch components.</p>
+			
+			<p>If I were to make my own hand held mechanical calculator I would aim for a few modifications, the most notible being subtraction. the 9's complement subtraction is a really cool technique but it's drawback is that you have a hard time telling if a number is positive or negative. The output register may say 6452942 but that could be +6452942 or -3547057.</p>
+			
+			<p style = "margin-bottom:0rem;">Thinking it through, The output registers will need a top and bottom spider gear that move up and down instead of the stepped drum. This will mesh with the either the top or bottom of the output gear, causing the necessary clockwise and anti-clockwise rotation needed for true subreaction. In addition to this, the carry mechanism will need to carry forwards and backwards. From there it should be easy enough to have a register that turns 90 degrees when the number dips below or rises above 0.</p>
+			</div>
+		  
+        </div>
+		
+    </div>
+
+		<!-- Right Column Sidebar (Desktop) -->
+		<aside class="sidebar-col desktop-sidebar">
+			
+			<h2 class= "fortnite" style= "margin-bottom:0rem; ">Learned Skills</h2>
+			<div class="card desktop-sidebar-card">
+				<p style="margin-bottom: 0.5rem;">• 3D CAD with Precision Tolerances</p>
+				<p style="margin-bottom: 0.5rem;">• Advanced Mating in Assemblies</p>
+			</div>
+
+
+			<!-- Card 2: Audio Integration -->
+			<h2 style="margin-bottom:0rem;">Project Soundscape</h2>
+			<div class="music-player-card">
+				<audio id="audio-player" style="display: none;"></audio>
+
+				<div class="song-list">
+					<div class="song-item" data-src="SoundScape/Spider.mp3">
+						<div class="song-meta">
+							<h4>Spider</h4>
+							<p>Oingo Boingo • 5:27</p>
+						</div>
+						<!-- Changed from <span> to <button> for explicit click interaction -->
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+
+					<div class="song-item" data-src="SoundScape/A Scar of Dreams.mp3">
+						<div class="song-meta">
+							<h4>A Scar of Dreams</h4>
+							<p>Sheena Ringo • 5:03</p>
+						</div>
+						<!-- Changed from <span> to <button> for explicit click interaction -->
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+
+					<div class="song-item" data-src="SoundScape/Bobcaygeon.mp3">
+						<div class="song-meta">
+							<h4>Bobcaygeon</h4>
+							<p>The Tragically Hip • 5:08 </p>
+						</div>
+						<!-- Changed from <span> to <button> for explicit click interaction -->
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+
+				<!-- Master Audio Controls Bar -->
+				<div class="master-controls-bar">
+					<div class="progress-bar-container" id="progress-container" style=	"width: 100%; margin-bottom: 0rem;">
+					<input type="range" id="song-progress" min="0" max="100" value="0" step="0.1" aria-label="Song Progress">
+						<div class="progress-bar-fill" id="progress-fill"></div>
+					</div>
+
+					<div class="time-display" style="margin-bottom: 0.6rem;">
+						<span id="current-time">0:00</span>
+						<span id="total-time">0:00</span>
+					</div>
+
+					<div class="controls-row" style="display: flex; justify-content: space-between; gap: 0.6rem;">
+						<button class="ctrl-btn" id="master-play-btn" style=<button id="master-play-btn" class="ctrl-btn" aria-label="Play/Pause">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+						<div class="volume-control-wrapper" style="display: flex; align-items: center; gap: 0.5rem;">
+							<span style="font-size: 0.75rem; font-family: monospace;">VOL</span>
+							<input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1" aria-label="Volume Slider">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+    </aside>
+
+    </div>
+</main>
+
+  <!-- Contact Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Contact me at:</strong></p>
+        <p>marcusr5190@gmail.com</p>
+      </div>
+      <div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="resume.html">Resume</a>
+			<a href="photobook.html">Photobook</a>
+      </div>
+	  <div class="footer-links">
+        <a class="footer-icons" href="https://www.linkedin.com/in/m-reuss/"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

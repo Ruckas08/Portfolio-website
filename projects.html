@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | MReuss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="photobook-page">
+
+<header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Marcus Reuss</a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+		<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"></path></svg>
+	  
+	  </button>
+      <nav>
+        <ul id="nav-list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html"class="active">Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="photobook.html">Photobook</a></li>
+
+        </ul>
+      </nav>
+    </div>
+</header>
+
+  <!-- Tag Filter Sidebar (matches photobook sidebar & dropdown) -->
+  <aside class="photobook-sidebar">
+      <div class="card photobook-nav-card">
+          <button class="photobook-dropdown-toggle" onclick="togglePhotobookMenu()">
+              <span>Sorting Tags</span>
+              <span class="dropdown-arrow">▼</span>
+          </button>
+		  <h3 class = "tag-title">Sorting Tags</h3>
+          <ul class="photobook-jump-list tag-filter-container" id="photobook-jump-list" style = "margin-top:0px;">
+              <li class="tag-list"><button class="tag-btn" data-tag="tag-1" ">3D CAD</button></li>
+              <li class="tag-list"><button class="tag-btn" data-tag="tag-2" >FEA</button></li>
+              <li class="tag-list"><button class="tag-btn" data-tag="tag-3" >Power Electronics</button></li>
+              <li class="tag-list"><button class="tag-btn" data-tag="tag-4" >Reverse Engineering</button></li>
+              <li class="tag-list"><button class="tag-btn" data-tag="tag-5" >Rapid Prototyping</button></li>
+              <li class="tag-list"><button class="tag-btn" data-tag="tag-6" >HackerFab</button></li>
+              <li class="tag-list"><button class="tag-btn" data-tag="tag-7" >Solo Project</button></li>
+          </ul>
+      </div>
+  </aside>
+
+  <main>
+    <h1>Projects</h1>
+
+    <div class="proj-grid-container">
+      
+      <!-- Card 1 -->
+      <div class="card" data-tags="tag-1 tag-3 tag-6">
+        <h2>DC Sputter Deposition Chamber</h2>
+        <p class="date">September 2024 - March 2025</p>
+        <div class="project-img-container">
+          <img src="Images/Sputter V1 ring.png" alt="DC Sputter Deposition Chamber Prototype">
+        </div>
+        <p>Lead a team that designed, assembled, and tested a DC sputter deposition chamber used for thin film deposition in association with HackerFab UWaterloo. Sputter has been handed over to other team members while I advise on the functionality of physical vapor deposition and general mechanical design practices.</p>
+        <p class="text-tag"><strong>Tags:</strong> 3D CAD / HackerFab / Power Electronics</p>
+        <a href="HF Sputter.html" class="button">Read More</a>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="card" data-tags="tag-1 tag-2 tag-6">
+        <h2>DLP Lithography Stage Upgrades</h2>
+        <p class="date">October 2026</p>
+        <div class="project-img-container">
+          <img src="Images/Litho Cover Image.jpg" alt="DLP Lithography Stage">
+        </div>
+        <p>Co-Lead a team at HackerFab UWaterloo responsible for the creation and usage of a DLP lithography station for maskless lithography. This project is a modification of the DLP lithography station created by the CMU branch of HackerFab better suited to fit the needs of the HackerFab at UWaterloo.</p>
+        <p class="text-tag"><strong>Tags:</strong> 3D CAD / Reverse Engineering / FEA / HackerFab</p>
+        <a href="HF-LithoStepper-Mod.html" class="button">Read More</a>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="card" data-tags="tag-1 tag-4 tag-7">
+        <h2>3D CAD of Curta Calculator</h2>
+        <p class="date">May 2025</p>
+        <div class="project-img-container">
+          <img src="Images/Curta CAD Cover.png" alt="Handheld Mechanical Calculator">
+        </div>
+        <p>The Curta Calculator is one of the coolest pieces of computation history as it is one of the only mass produced handheld mechanical calculators. developed by Curt Herzstark in the 1930's my goal was to use the original drawings to create a model of the with all the proper mates and interactions to emulate the original.</p>
+        <p class="text-tag"><strong>Tags:</strong> Reverse Engineering / 3D CAD</p>
+        <a href="Curta-Calculator.html" class="button">Read more</a>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="card" data-tags="tag-1 tag-5 tag-5 tag-7">
+        <h2>Hack The North 2026 Badge Case</h2>
+        <p class="date">September 2026</p>
+        <div class="project-img-container">
+          <img src="Images/HTN Badge Cover.jpg" alt="Hack The North Badge Case">
+        </div>
+        <p>Designed a Custom 3D-printed case for the PCB badges used in Hack the North on behalf of the designers. This was then put out to public channels for attendees of the event to print for their own badges.</p>
+        <p class="text-tag"><strong>Tags:</strong> Reverse Engineering / 3D Printing / 3D CAD / Rapid Prototyping</p>
+        <a href="HTN-Badge-Case.html" class="button">Read More</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Contact me at:</strong></p>
+        <p>marcusr5190@gmail.com</p>
+      </div>
+      <div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="resume.html">Resume</a>
+			<a href="photobook.html">Photobook</a>
+      </div>
+	  <div class="footer-links">
+        <a class="footer-icons" href="https://www.linkedin.com/in/m-reuss/"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project Details | MReuss</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Pinned Header -->
+<header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Marcus Reuss</a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+		<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"></path></svg>
+	  </button>
+      <nav>
+        <ul id="nav-list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html" class="active">Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="photobook.html">Photobook</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<!-- Main Content Layout -->
+<main>
+    
+    <!-- Section 1: Overview -->
+    <div class="project-header-section">
+		<h1 style="margin-bottom:0px;">DC Sputter Deposition Chamber</h1>
+		
+		<p><strong>Tags:</strong> 3D CAD / HackerFab / Power Electronics</p>
+		<a href="projects.html" style="font-weight: 600; text-decoration: none; color:#121212;"> ← See all Projects</a>
+		<h2 style="margin-top:0.5rem;">Introduction</h2>
+		<div class="card" style="padding: 0.5rem 1rem;">
+			<p style = "margin-bottom:0px;">Many industries require thin layers of materials to be adhered to surfaces to build functional devices, prostetics, and sensors. In Augest of 2024 I was approached by the design team <a class="ext-link" href="https://www.waterloofab.com/">HackerFab</a> at the University of Waterloo to aid in the creation of a DC sputter chamber. During the development of the preliminary V0 and of the first complete version, V1, I was the mechanical design lead. As of May 2025 I have taken up an advisor role instead of a lead role on this project to focus on other projects within HackerFab.</p>
+		</div>
+		
+		<h2 style="padding-top:1.5rem;">Working Principal</h2>
+		<div class="card" style="padding: 0.5rem 1rem;">
+			<p>A sputter deposition machine works by depositing a physical vapor of a substance onto a substrate. DC sputter chambers use a DC power source to create this physical vapor and can only deposit metals, to deposit non-metals you would need to use an RF sputterer that runs off an alternating current.</p>
+			
+			<p>Inside the chamber is a vacuum, traditionally 10^-8 torr, and the little bit of gas laft in the chamber is argon. This argon is ionized with the DC power source, since an ionized gas has lost an electron the ionized argon has a positive charge. This positivly charged ionized argon can be manipulated with magnetic fields.</p>
+			
+			<p>We take advantage of this property by having a set of magnets behind a very pure piece of metal (in our case Aluminium) called a target. The ionized argon will be sttracted to the magnets and constrained by their magnetic fields, crashing into the target adn disloging some metal ions and depositing them on the substrate that acts as an anode.</p>
+			
+			<p style = "margin-bottom:0px;">Argon is used for a few reason. the first reason is that it is a nobel gas, so it will not contaminate the chamber. Second it is the most plentiful and inexpensive nobel gas. Finally argon is also relativly heavy compared to another gas like helium, providing more force during the impact between the ionized argon and the target.</p>
+		</div>
+    </div>
+
+    <!-- Mobile-Only Top Sidebar Cards -->
+	<div class="mobile-top-sidebar-cards">
+	  <div class="info-grid">
+	    <div class="info-group">
+		  <h2 style="margin-bottom:0rem;">Collaberators</h2>
+		  <div class="card" style="padding:0.5rem 1rem;">
+			<p style="margin-bottom: 0.5rem;"><strong><a class="ext-link" href="https://www.linkedin.com/in/arjun-ak/">Arjun Krishnan</a></strong> - Process Lead</p>
+			<p style="margin-bottom: 0.5rem;"><strong><a class="ext-link" href="https://www.linkedin.com/in/eric-jessee-17583087/">Eric Jessee</a></strong> - Electrical Lead</p>
+          </div>
+	    </div>
+	
+	    <div class="info-group">	
+		  <h2>Learned Skills</h2>
+		  <div class="card" style="padding:0.5rem 1rem;">
+			<p style="margin-bottom: 0.5rem;">• Pressure Chamber Design</p>
+			<p style="margin-bottom: 0.5rem;">• Creating Plasma</p>
+			<p style="margin-bottom: 0.5rem;">• Constraining Plasma</p>
+		  </div>
+	    </div>
+      </div>
+	</div>
+
+    <!-- Section 2: Body Grid (Desktop: Left content + Right Sidebar) -->
+    <div class="project-body-layout">
+      
+      <!-- Specifications & Parameters Section (Main Content) -->
+      <div class="content-col">
+		<h2>Sputter V0</h2>
+        
+		<div class="grid-container">
+          <div class="card">
+			<div class="project-img-container">
+				<img src="Images/Sputter/V0 plasma.jpg" alt="Striking Plasma with V0">
+			</div>
+			<p style = "margin-bottom:0px;">Sputter V0 was intended to be a small start for the team gaining our bearings to make a fully fledge sputter chamber. The entire chamber was designed in roughly 3 months and machined and assembled in roughly a month for approximatly $300 CAD with help from the machinists from <a class="ext-link" href="https://www.ascensionas.ca/">Ascension Automation</a> in Cambridge, ON.</p>
+		  </div>
+		  
+		  <div class="card">
+			<div class="portrait-img-grid">
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/V0 CAD Exploded.png" alt="Exploded View of Sputter V0 CAD">
+				</div>
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/V0.jpg" alt="Final Machined Sputter V0">
+				</div>
+			</div>
+			<p style = "margin-bottom:0px;">A generic form factor between the subsequent iterations of the sputter deposition chamber originated from V0. This form factor is characterized by a 5.5” borosilicate tube to see the plasma in the chamber and two plates sealed with radial sealing O-rings.</p>
+		  </div>
+        </div>
+
+        <h2 style="padding-top: 1.5rem;">Sputter V1</h2>
+        
+		<div class="grid-container">
+          <div class="card">
+				<div class="project-img-container">
+					<img src="Images/Sputter V1 Ring.png" alt="Striking Plasma with V1">
+				</div>
+				<p style = "margin-bottom:0px;">Sputter V1 is the first attempt at a fully fledged sputter deposition chamber. The changes from sputter V0 to V1 include some small ease of use changes and the addition of a sputter head. This design costed roughly $1100 CAD and was machined by PCBWay and JLCPCB.</p>
+		  </div>
+			
+		  <div class="card">
+				<div class="project-img-container">
+					<img src="Images/Sputter/V1 setup.jpg" alt="Sputter V1 Full Assy">
+				</div>
+				<p style = "margin-bottom:0px;">The quality of life changes stem from the major issue with V0 being the lack of ease of access of the silicon substrate inside the chamber. The raidal seals offer too much friction to allow the inside of the chamber to be easily accessed. This was resolved by having radial sealed O-rings seal the borosilicate tube to a lid ring, while the chamber lid is sealed with a face sealed O-ring.</p>
+		  </div>
+			
+		  <div class="card">			
+			<p>The sputter head is responsible for the ionization and the constraining of plasma using ring and dot magnets as well as drawing the ionized argon towards the target. There were two main challenges to overcome with this version that were done hastily to prepare for the <a href="photobook.html#HackerFab @ Socratica Symposium" onclick="closePhotobookMenu()" class="ext-link">2025 Socratica Symposium</a>.</p>
+			
+			<div class="portrait-img-grid">
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/V1 SH Bake.jpg" alt="Baking Sputter Head at 200°C for 4 hours at 2:30am">
+				</div>
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/V1 SH CAD.png" alt="Sputter Head CAD Cross Section">
+				</div>
+			</div>
+			
+			<p>The first was creating vacuum sealed feedthroughs that can withstand pressure down to 10^-3 torr, this was crudly fixed by applying and curing some JB Weld and by keeping as much of the electronics intended to be applied to atmosperic pressure. This was done by keeping as many electrical and auxillerary features of the sputter head unsealed while making the sputter head sealed.</p>
+			
+			<div class="portrait-img-grid">
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/V1 SH Assy.jpg" alt="Sputter V1 head mid-assembly">
+				</div>
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/Magnetic Film.jpg" alt="magnetic Field Shown on Magnetic Film Paper.">
+				</div>
+			</div>
+			
+			<p style="margin-bottom:0rem;">The second issue was one of temperature. It did not come up but it was heavily considered as the neodimium magnets used in the sputter head no longer create a magnetic field if they reach roughly 90°C. The Sputter head was designed in a way to allow for water cooling lines to cool the aluminium sputter head through conduction.</p>
+		  </div>
+        </div>
+		
+		<h2 style="padding-top: 1.5rem;">Next Steps</h2>
+        
+		<div class="grid-container">
+          <div class="card">
+			<div class="portrait-img-grid">
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/Sputter 2026 Striking.png" alt="Bad Plasma Being Struk">
+				</div>
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/Sputter 2026.png" alt="2026 Sputter with Water Cooling">
+				</div>
+			</div>
+			
+			<p>A new member of HackerFab has taken up the task of maintaining and upgrading sputter, where my role now is to offer advice. There are some key changes and upgrades that I have wanted to make that have been brough to fruition.</p>
+			<p>The first change is the addition and integration of a turbomolecular pump in order to drop the operable pressure from 10^-3 torr to 10^-8 torr.</p>
+			<p>Another change that was done was to remove the welded components and replace them with blind holes to make the repeatability of making the sputter and it's preformance more reliable.</p>
+			<p style = "margin-bottom:0px;">Finally we wanted to properly add closed loop liquid cooling to keep the magnets cool. This has been done with a fishtank pump and a tupperware container of deionized water.</p>
+		  </div>
+		  
+		  <div class="card">
+			<div class="portrait-img-grid">
+				<div class="portrait-img-container">
+					<img src="Images/Sputter/Sputter V1.png" alt="Exploded View of Sputter V0 CAD">
+				</div>
+				<div class="portrait-img-container">
+					<img src="Images/Sputter V1 Ring.png" alt="Final Machined Sputter V0">
+				</div>
+			</div>
+			<p style = "margin-bottom:0px;">These incremental changes and additions, including the soon to be integration of tools like a Quartz Crystal Microbalance, have allowed our process team to start optimizing the preformance of the device. at this point in time they are getting mirror like layers of depostion on to glass microscope slides.</p>
+		  </div>
+        </div>
+      </div>
+
+      <!-- Right Column Sidebar (Desktop) -->
+      <aside class="sidebar-col desktop-sidebar">
+			<h2 class="fortnite" style="margin-bottom:0rem;">Collaberators</h2>
+			<div class="card desktop-sidebar-card">
+				<p style="margin-bottom: 0.5rem;"><strong><a class="ext-link" href="https://www.linkedin.com/in/arjun-ak/">Arjun Krishnan</a></strong> - Process Lead</p>
+				<p style="margin-bottom: 0.5rem;"><strong><a class="ext-link" href="https://www.linkedin.com/in/eric-jessee-17583087/">Eric Jessee</a></strong> - Electrical Lead</p>
+			</div>
+			
+			<h2 class="fortnite" style="margin-bottom:0rem;">Learned Skills</h2>
+			<div class="card desktop-sidebar-card">
+				<p style="margin-bottom: 0.5rem;">• Pressure Chamber Design</p>
+				<p style="margin-bottom: 0.5rem;">• Creating Plasma</p>
+				<p style="margin-bottom: 0.5rem;">• Constraining Plasma</p>
+			</div>
+
+			<!-- Project Soundscape Card -->
+			<h2 style="margin-bottom:0rem; padding-top:1.5rem;">Project Soundscape</h2>
+			<div class="music-player-card">
+				<audio id="audio-player" style="display: none;"></audio>
+
+				<div class="song-list">
+					<div class="song-item" data-src="SoundScape/Insanity.mp3">
+						<div class="song-meta">
+							<h4>Insanity</h4>
+							<p>Oingo Boingo • 8:26</p>
+						</div>
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+
+					<div class="song-item" data-src="SoundScape/Gold.mp3">
+						<div class="song-meta">
+							<h4>Gold</h4>
+							<p>Spandau Ballet • 7:14</p>
+						</div>
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+
+					<div class="song-item" data-src="SoundScape/Be Yourself Or Die Dreaming.mp3">
+						<div class="song-meta">
+							<h4>Be Yourself Or Die Dreaming</h4>
+							<p>Nouvelle Story • 3:53</p>
+						</div>
+						<button class="song-badge ctrl-btn" aria-label="Play Track">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+					</div>
+				</div>
+
+				<!-- Master Audio Controls Bar -->
+				<div class="master-controls-bar">
+					<div class="progress-bar-container" id="progress-container" style="width: 100%; margin-bottom: 0rem;">
+					  <input type="range" id="song-progress" min="0" max="100" value="0" step="0.1" aria-label="Song Progress">
+					  <div class="progress-bar-fill" id="progress-fill"></div>
+					</div>
+
+					<div class="time-display" style="margin-bottom: 0.6rem;">
+						<span id="current-time">0:00</span>
+						<span id="total-time">0:00</span>
+					</div>
+
+					<div class="controls-row" style="display: flex; justify-content: space-between; gap: 0.6rem;">
+						<button id="master-play-btn" class="ctrl-btn" aria-label="Play/Pause">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+						</button>
+						<div class="volume-control-wrapper" style="display: flex; align-items: center; gap: 0.5rem;">
+							<span style="font-size: 0.75rem; font-family: monospace;">VOL</span>
+							<input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1" aria-label="Volume Slider">
+						</div>
+					</div>
+				</div>
+			</div>
+      </aside>
+
+    </div>
+</main>
+
+  <!-- Contact Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Contact me at:</strong></p>
+        <p>marcusr5190@gmail.com</p>
+      </div>
+      <div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="resume.html">Resume</a>
+			<a href="photobook.html">Photobook</a>
+      </div>
+	  <div class="footer-links">
+        <a class="footer-icons" href="https://www.linkedin.com/in/m-reuss/"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
